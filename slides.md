@@ -527,7 +527,7 @@ Diffondere il progetto Angelo in modo **sicuro**, **educativo** e **sostenibile*
 
 ## Arduino Day 2026 - FabLab Bergamo
 
-![bg right:50%](immagini/arduinoday2026.jpg)
+![bg right contain](immagini/arduinoday2026.jpg)
 
 **Prossimo evento:**
 
@@ -582,7 +582,7 @@ Scopri da vicino:
 
 ---
 
-![bg center:70%](immagini/arduinotostato2026.jpg)
+![bg contain](immagini/arduinotostato2026.jpg)
 
 ---
 
