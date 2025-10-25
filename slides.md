@@ -525,6 +525,26 @@ Diffondere il progetto Angelo in modo **sicuro**, **educativo** e **sostenibile*
 
 ---
 
+## Arduino Day 2026 - FabLab Bergamo
+
+![bg right:50%](immagini/arduinoday2026.jpg)
+
+**Prossimo evento:**
+
+- **Data:** Sabato 21 marzo 2026
+- **Luogo:** FabLab Bergamo - Via M. Gavazzeni 3
+- **Orario:** Dalle 15.00 alle 20.00
+
+**Attività:**
+
+- Area Talk e Area Laboratorio
+- Esposizione progetti (Angelo e altri)
+- Networking con maker e appassionati
+
+**Partecipa:** Form disponibile su www.fablabbergamo.it/call-arduinoday2026
+
+---
+
 <!-- _class: lead -->
 
 # Conclusioni
@@ -559,6 +579,10 @@ Scopri da vicino:
 - La nostra community
 
 **Le porte sono aperte: la tecnologia è davvero di tutti!**
+
+---
+
+![bg center:70%](immagini/arduinotostato2026.jpg)
 
 ---
 
