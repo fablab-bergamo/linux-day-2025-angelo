@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+*.html
+*.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+.cache/
+
+# Source documentation files (external materials used to create slides)
+# Keep only slides.md, exclude all source materials
+base.md
+base2.md
+RelazioneANGELO.txt
+StoriaANGELObyLuciano.pdf
+MicropythonArduino.pdf
+*.txt
+!LICENSE

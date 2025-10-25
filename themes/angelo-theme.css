@@ -1,0 +1,219 @@
+/* @theme angelo */
+
+@import 'default';
+
+:root {
+  --color-primary: #2196F3;      /* Blu tech */
+  --color-secondary: #FF9800;    /* Arancione FabLab */
+  --color-accent: #4CAF50;       /* Verde OSHWA */
+  --color-dark: #263238;         /* Grigio scuro testo */
+  --color-light: #ECEFF1;        /* Grigio chiaro bg */
+  --color-bg: #FFFFFF;           /* Bianco */
+}
+
+section {
+  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-light) 100%);
+  color: var(--color-dark);
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  padding: 60px 80px;
+}
+
+/* Header styling */
+section h1 {
+  color: var(--color-primary);
+  border-bottom: 4px solid var(--color-secondary);
+  padding-bottom: 0.3em;
+  font-weight: 700;
+  font-size: 2.2em;
+}
+
+section h2 {
+  color: var(--color-primary);
+  border-left: 6px solid var(--color-secondary);
+  padding-left: 0.5em;
+  font-weight: 600;
+  margin-top: 0.5em;
+  font-size: 1.8em;
+}
+
+section h3 {
+  color: var(--color-secondary);
+  font-weight: 600;
+  margin-top: 1em;
+}
+
+/* Lead class for title slides */
+section.lead {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #1976D2 100%);
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+section.lead h1 {
+  color: white;
+  border-bottom: 4px solid var(--color-secondary);
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+section.lead h2 {
+  color: var(--color-light);
+  border-left: none;
+  padding-left: 0;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+section.lead strong {
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+section.lead p {
+  color: var(--color-light);
+  font-size: 1.1em;
+}
+
+/* Links */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+a:hover {
+  border-bottom-color: var(--color-secondary);
+}
+
+/* Code blocks */
+code {
+  background: var(--color-light);
+  color: #C62828;
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  font-family: 'Fira Code', 'Consolas', monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  background: var(--color-dark);
+  color: #A5D6A7;
+  padding: 1.5em;
+  border-radius: 8px;
+  border-left: 6px solid var(--color-accent);
+  overflow-x: auto;
+}
+
+pre code {
+  background: transparent;
+  color: #A5D6A7;
+  padding: 0;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+  line-height: 1.6;
+}
+
+/* Strong text */
+strong {
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 6px solid var(--color-accent);
+  background: var(--color-light);
+  padding: 1em 1.5em;
+  margin: 1em 0;
+  font-style: italic;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+  font-size: 0.9em;
+}
+
+table thead {
+  background: var(--color-primary);
+  color: white;
+}
+
+table th {
+  padding: 0.8em;
+  text-align: left;
+  font-weight: 600;
+}
+
+table td {
+  padding: 0.8em;
+  border-bottom: 1px solid var(--color-light);
+}
+
+table tbody tr:hover {
+  background: rgba(33, 150, 243, 0.05);
+}
+
+/* Pagination */
+section::after {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.9em;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.8);
+}
+
+/* Footer customization */
+footer {
+  color: var(--color-dark);
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+/* Emphasis with checkmarks */
+section ul li::marker {
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+/* Special styling for emoji checkmarks */
+section li:has(> :first-child:is(✅)) {
+  list-style: none;
+  margin-left: -1em;
+}
+
+/* Image styling */
+img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 100%;
+}
+
+/* Special boxes for important info */
+section > p > strong:first-child {
+  display: inline-block;
+  background: var(--color-secondary);
+  color: white;
+  padding: 0.2em 0.8em;
+  border-radius: 4px;
+  margin-bottom: 0.5em;
+}
+
+/* Section dividers */
+hr {
+  border: none;
+  border-top: 3px solid var(--color-secondary);
+  margin: 2em 0;
+  opacity: 0.3;
+}
