@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Presentazione progetto Angelo - Linux Day 2025 Bergamo",
   "scripts": {
-    "build": "npm run build:html && npm run build:pdf",
+    "build": "npm run build:html && npm run copy:images && npm run build:pdf",
     "build:html": "marp slides.md -o dist/slides.html --html --theme-set themes/angelo-theme.css",
-    "build:pdf": "marp slides.md -o dist/slides.pdf --pdf --allow-local-files --theme-set themes/angelo-theme.css",
+    "build:pdf": "marp slides.md -o dist/slides.pdf --pdf --allow-local-files --theme-set themes/angelo-theme.css || echo 'PDF generation failed, but continuing...'",
+    "copy:images": "cp -r immagini dist/",
     "watch": "marp -w slides.md -o dist/slides.html --html --theme-set themes/angelo-theme.css",
     "serve": "marp -s slides.md -p 8080 --theme-set themes/angelo-theme.css"
   },
