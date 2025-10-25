@@ -16,6 +16,7 @@ section {
   color: var(--color-dark);
   font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
   padding: 60px 80px;
+  font-size: 1.4em;
 }
 
 /* Header styling */
@@ -24,7 +25,7 @@ section h1 {
   border-bottom: 4px solid var(--color-secondary);
   padding-bottom: 0.3em;
   font-weight: 700;
-  font-size: 2.2em;
+  font-size: 1.9em;
 }
 
 section h2 {
@@ -33,7 +34,7 @@ section h2 {
   padding-left: 0.5em;
   font-weight: 600;
   margin-top: 0.5em;
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 section h3 {
@@ -53,7 +54,7 @@ section.lead {
 section.lead h1 {
   color: white;
   border-bottom: 4px solid var(--color-secondary);
-  font-size: 3em;
+  font-size: 2.5em;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
@@ -61,7 +62,7 @@ section.lead h2 {
   color: var(--color-light);
   border-left: none;
   padding-left: 0;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 400;
 }
 
@@ -118,8 +119,9 @@ ul, ol {
 }
 
 li {
-  margin-bottom: 0.5em;
-  line-height: 1.6;
+  margin-bottom: 0.4em;
+  line-height: 1.5;
+  font-size: 0.95em;
 }
 
 /* Strong text */
@@ -143,7 +145,7 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin: 1em 0;
-  font-size: 0.9em;
+  font-size: 0.85em;
 }
 
 table thead {
@@ -152,13 +154,13 @@ table thead {
 }
 
 table th {
-  padding: 0.8em;
+  padding: 0.6em;
   text-align: left;
   font-weight: 600;
 }
 
 table td {
-  padding: 0.8em;
+  padding: 0.6em;
   border-bottom: 1px solid var(--color-light);
 }
 
