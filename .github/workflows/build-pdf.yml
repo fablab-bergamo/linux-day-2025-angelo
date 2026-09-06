@@ -1,0 +1,40 @@
+name: Build PDF (manual)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Install Chromium
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y chromium-browser
+
+    - name: Build PDF (full)
+      run: npx marp slides.md -o dist/slides.pdf --pdf --allow-local-files --theme-set themes/angelo-theme.css
+      env:
+        CHROME_PATH: /usr/bin/chromium-browser
+
+    - name: Build PDF (short)
+      run: npx marp slides-short-version.md -o dist/slides-short.pdf --pdf --allow-local-files --theme-set themes/angelo-theme.css
+      env:
+        CHROME_PATH: /usr/bin/chromium-browser
+
+    - name: Upload PDF artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: slides-pdf
+        path: dist/*.pdf

@@ -20,6 +20,6 @@
   "author": "Pascal Brunot - FabLab Bergamo",
   "license": "CC-BY-SA-4.0",
   "devDependencies": {
-    "@marp-team/marp-cli": "^3.4.0"
+    "@marp-team/marp-cli": "^4.5.1"
   }
 }
